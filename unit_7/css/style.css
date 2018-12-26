@@ -4,7 +4,6 @@
 
 header {
     background-color:  #ffffff;
-    border: 1px black solid;
     padding: 20px;
     font-style: center
 }
@@ -40,7 +39,7 @@ nav: hover{
 
 
 #intro {
-    background-color: #666666;
+    background-color: #d3ebe9;
     float: center;
     width: 1480px;
     height: 329px;
@@ -51,20 +50,11 @@ nav: hover{
 #intro_paragraph {
     background-color: none;
     float: left;
-    width: 300px;
-    height: 229px;
+    width: 500px;
     margin:25px; 
     padding: 50px
 }
 
-#name {
-    background-color: none;
-    float: left;
-    width: 300px;
-    height: 229px;
-    margin:25px; 
-    padding: 50px
-}
 
 #skill_description {
     background-color: #ffffff;
