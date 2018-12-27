@@ -112,31 +112,31 @@ nav: hover{
     padding-left: 200px;
     padding-top: 150px;
 }
-
-#dentegra {
-   background-color: #ffffff;
-    float: center;
-    width: 1480px;
-    height: 400px;
+#exhibits {
+    background-color: #b9e5e6;
+    width: 100%;
+    height:602px;
     margin:0px; 
-    padding: 100px;
+    padding:0px;
 }
 
-#JPA {
-   background-color: #f2f2f2;
-    float: center;
-    width: 1480px;
-    height: 400px;
+#exhibits_paragraph {
+    background-color: none;
+    float:right;
+    width:400px;
+    height:229px;
     margin:0px; 
-    padding: 100px;
+    padding-top:150px;
+    padding-right:350px;
 }
-#other_skills {
-    background-color: #666666;
-    float: center;
-    width: 1480px;
-    height: 329px;
+
+#exhibits_image {
+    background-color: none;
+    float:left;
+    width:837px;
+    height:602px;
     margin:0px; 
-    padding: 100px
+    padding:0px
 }
 
 #to_connect {
