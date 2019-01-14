@@ -104,9 +104,14 @@ max-width: 50%;
 
 #to_connect{
 text-align:center;
-margin: 25vh;
+margin: auto;
 padding-top: 100px;
 padding-bottom: 100px;
+}
+#size{
+    max-width: 50%;
+    align-content: cente;
+    
 }
 
 input{
