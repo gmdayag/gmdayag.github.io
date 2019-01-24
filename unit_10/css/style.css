@@ -4,68 +4,77 @@
 body{
 
 font-family: 'Roboto', sans-serif;
-font-size: 16px;
-font-weight: 300;
-line-height: 1.25;
+font-size:16px;
+font-weight:300;
+line-height:1.25;
 }
 
 header {
-background-color: #d3ebe9;
-padding: 5em;
+background-color:#d3ebe9;
+padding:5em;
 }
 nav {
-
 float:right;
 }
+
 nav a{
 background-color:none;
 color: #000000;
 text-decoration: none;
 display:inline-block;
 padding: 20px 20px;
+}
 
-}
-nav a:hover{
+nav a: hover {
 text-decoration: underline;
-color: #00aec7;
+color:#00aec7;
 }
+
 .cta{
     background-color:#338720;
-    padding-top: 10px;
+    padding-top:10px;
     padding-bottom:10px;
     padding-left:10px;
-    padding-right: 10px;
+    padding-right:10px;
     font-size: 14px;
     color:#ffffff;
-    text-decoration: none;
+    text-decoration:none;
+    margin-top:10px
 
 }
 .clearfix:after, section:after {
 visibility: hidden;
-display: block;
+display:block;
 content: "";
 clear: both;
 }
+
 #logo {
-float: left;
+float:left;
 }
+
 #intro {
-background-color: #d3ebe9;
-background:url(.../image/intro_image.jpg),
-#d3ebe9;
+background-color:#d3ebe9;
+background:url(../image/intro_image.jpg),#d3ebe9;
 background-repeat: no-repeat;
-background-position: left;
-height: auto;
+background-size: 50%;
+background-position: right top;
+height:37em;
+padding-left:45px;
+padding-top:150px;
 }
+
 #intro_paragraph {
-max-width: 25%;
-float: left;
-margin: 10vw 0 0 10vw;
+width:30%;
+float:left;
+padding-left:45px;
+padding-right: 45px;
+
 }
 
 #skill_description {
-background-color: #f2f2f2;
-padding: 8em 0;
+background-color:#f2f2f2;
+padding:8em 0;
 }
 
 #skill_paragraph {
@@ -73,22 +82,29 @@ text-align: center;
 margin-left:20vh;
 margin-right:20vh;
 }
+
 #work {
 background-color: white;
-background:url(.../image/delta_image.jpg),
-white;
+background:url(../image/delta_image.jpg),#ffffff;
+background-size: 60%;
 background-repeat: no-repeat;
-background-position: left;
+background-position: right bottom;
+height:34em;
 }
 
 #work_paragraph {
-max-width: 25%;
+width: 30%;
 float: left;
 margin: 10vw 0 0 10vw;
 }
 
 #exhibits {
 background-color: #b9e5e6;
+background:url(../image/skill_image.jpg),#b9e5e6;
+background-size: 40%;
+background-repeat: no-repeat;
+background-position: left top;
+height: 35em;
 }
 
 #exhibits_paragraph {
@@ -99,36 +115,54 @@ margin: 10vw 0 0 0vw;
 
 #exhibits_image {
 float:left;
-max-width: 50%;
+width: 50%;
 }
 
 #to_connect{
 text-align:center;
 margin: auto;
-padding-top: 100px;
-padding-bottom: 100px;
-}
-#size{
-    max-width: 50%;
-    align-content: cente;
-    
-    margin: auto;
-    text-align: left;
+padding-top: 85px;
+height:34em;
+width: 42%;
+text-align: left;
 }
 
+form{
+    line-height: 25px;
+    margin-top: 50px;
+
+
+}
 input{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
-    color:#bfbfbf;
-    width: 680px;
+    color:#666666;
+    width: 100%;
     padding-left: 2px;
     padding-top: 3px;
     padding-bottom: 3px;
+    margin-bottom: 10px;
 }
 label{
     text-align: left;
     font-size: 16px;
     font-weight: 700;
+}
+
+input{
+margin-top: 10px;
+}
+
+button{
+background-color: #338720;
+width: 100px;
+
+border: none;
+padding-top: 12px;
+padding-bottom: 12px;
+color: white;
+margin-top: 25px;
+font-size: 14px;
 }
 
 footer {
@@ -157,11 +191,245 @@ text-transform: uppercase;
 
 ul {
 padding-left:1.25em;
+margin-top: 10px;
+margin-bottom: 25px;
 }
 
-@media only screen and (min-width:1298px)
+p {
+margin-top: 10px;
+margin-bottom: 25px;    
+}
 
-
-
+    @media only screen and (max-width: 1430px){
     
+    #intro {
+    height:30em;}
+
+    }
+
+     @media only screen and (max-width: 1557px){
     
+    #intro {
+    height:25em;}
+
+    #intro_paragraph {
+    width:50%;}
+
+    #exhibits {
+    height: 28em;}
+
+    }
+
+     @media only screen and (max-width: 1002px){
+    
+    #intro {
+    height:23em;}
+
+    #intro_paragraph {
+    width:50%;}
+
+    #exhibits {
+    height: 23em;}
+
+    }
+
+            @media only screen and (max-width: 888px){
+    
+    #intro {
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center bottom;
+    height:37em;
+    padding-left:45px;
+    padding-top:50px;
+    }
+
+    #intro_paragraph {
+    width:100%;
+    text-align: center;
+    padding-left:45px;
+    padding-right: 45px;
+
+}
+    #work {
+    background-color: white;
+    background:url(../image/delta_image.jpg),#ffffff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height:50em;
+    }
+
+    #work_paragraph {
+    width: 80%;
+    text-align: center;
+    margin-top: 10%;
+    }
+
+    #exhibits {
+    background-image: none;
+    background-position: none;
+    margin:auto; 
+    height: 23em;}
+
+    #exhibits_paragraph {
+    float:left;
+    width:50%;
+    margin: 10vw 0 0 30vw;}
+
+    }
+
+             @media only screen and (max-width: 750px){
+    
+    #intro {
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center bottom;
+    height:33.1em;
+    padding-left:45px;
+    padding-top:50px;
+    }
+
+    #intro_paragraph {
+    width:100%;
+    text-align: center;
+    padding-left:45px;
+    padding-right: 45px;}
+
+            @media only screen and (max-width: 650px){
+    
+    #intro {
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center bottom;
+    height:32.1em;
+    padding-left:45px;
+    padding-top:50px;
+    }
+
+    #intro_paragraph {
+    width:100%;
+    text-align: center;
+    padding-left:45px;
+    padding-right: 45px;}
+         
+           @media only screen and (max-width: 537px){
+
+    header {
+    background-color:#d3ebe9;
+    }
+    nav {
+    float:left;
+    margin-left: 5em;}
+
+    nav a{
+    background-color:none;
+    color: #000000;
+    text-decoration: none;
+    display:inline-block;
+    padding: 20px;}
+
+    nav a: hover {
+    text-decoration: underline;
+    color:#00aec7;}
+    
+    #logo {
+    margin-left: 10em;
+    width: 100%}
+    
+    #intro {
+    background-size: 55%;
+    background:none;
+    background-color:#d3ebe9; 
+    height:20em;
+    padding-left:45px;
+    padding-top:50px;}
+
+    #intro_paragraph {
+    width:100%;
+    text-align: center;
+    padding-left:45px;
+    padding-right: 45px;}
+
+    #work {
+    background-color: white;
+    background:url(../image/delta_image.jpg),#ffffff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height:35em;
+    }
+             @media only screen and (max-width: 537px){
+
+    header {
+    background-color:#d3ebe9;
+    }
+    nav {
+    float:left;
+    margin-left: 2em;}
+
+    nav a{
+    background-color:none;
+    color: #000000;
+    text-decoration: none;
+    display:inline-block;
+    padding: 5px;}
+
+    nav a: hover {
+    text-decoration: underline;
+    color:#00aec7;}
+    
+    #logo {
+    margin-left: 6em;
+    padding-bottom: 10px;
+    width: 100%}
+    
+    #intro {
+    background-size: 55%;
+    background:none;
+    background-color:#d3ebe9; 
+    height:20em;
+    padding-left:45px;
+    padding-top:50px;}
+
+    #intro_paragraph {
+    width:100%;
+    text-align: center;
+    padding-left:25px;
+    padding-right: 45px;
+    padding-top: 20px;}
+    
+    #skill_paragraph {
+    text-align: center;
+    margin-left:5vh;
+    margin-right:5vh;}
+
+    #work {
+    background-color: white;
+    background:url(../image/delta_image.jpg),#ffffff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height:35em;}
+
+     #exhibits {
+    background-image: none;
+    background-position: none;
+    margin:auto; 
+    height: 20em;}
+
+    #exhibits_paragraph {
+    float:left;
+    width:100%;
+    margin: 15vw 0 0 5vw;}
+    
+    #to_connect{
+    text-align:center;
+    margin: auto;
+    padding-top: 85px;
+    height:34em;
+    width: 80%;
+    text-align: left;
+    margin: 3vw 0 0 5vw;}
+
+    }
